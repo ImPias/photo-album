@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Album</title>
     <style>
+        .album-heading{
+            text-align: center;
+            color: tomato;
+        }
         .photo-album{
             display: flex;
             flex-wrap: wrap;
@@ -16,11 +20,16 @@
             border-radius: 3px;
             position: relative;
             margin: 13px;
+            overflow: hidden;
         }
-        .photo-frame img{
+        .photo-frame .photo img{
             height: 200px;
             width: 100%;
             border-radius: 2px;
+        }
+        .photo-frame:hover .photo img{
+            transform: scale(1.2);
+            transition: transform 1s;
         }
         .photo-frame:hover .photo-details{
             display: block;
@@ -30,7 +39,7 @@
             top: 0;
             height: 200px;
             width: 300px;
-            background-color: rgba(128, 128, 128, 0.6);
+            background-color: rgba(128, 128, 128, 0.4);
             display: none;
         }
         .photo-details h2{
@@ -44,8 +53,7 @@
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Photo Album</h1>
-    <h1>Github Test</h1>
+    <h1 class="album-heading">Photo Album</h1>
     <section class="photo-album">
         <div class="photo-frame">
             <div class="photo">
