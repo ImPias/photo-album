@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 300px 1fr 1fr;
+            grid-gap: 30px;
+        }
+        .article{
+            background-color: thistle;
+            text-align: center;
+        }
+        .article-1{
+            grid-column: 1/span 3;
+        }
+        .article-2{
+            grid-row: 2/span 6;
+        }
+        .article-3{
+            grid-column: 2/span 2;
+        }
+        .article-4{
+            grid-row: 3/span 2;
+        }
+        .article-5{}
+        .article-15{
+            grid-column: 1/span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article class="article article-1">
+            <h2>Article-1</h2>
+        </article>
+        <article class="article article-2">
+            <h2>Article-2</h2>
+        </article>
+        <article class="article article-3">
+            <h2>Article-3</h2>
+        </article>
+        <article class="article article-4">
+            <h2>Article-4</h2>
+        </article>
+        <article class="article article-5">
+            <h2>Article-5</h2>
+        </article>
+        <article class="article article-6">
+            <h2>Article-6</h2>
+        </article>
+        <article class="article article-7">
+            <h2>Article-7</h2>
+        </article>
+        <article class="article article-8">
+            <h2>Article-8</h2>
+        </article>
+        <article class="article article-9">
+            <h2>Article-9</h2>
+        </article>
+        <article class="article article-10">
+            <h2>Article-10</h2>
+        </article>
+        <article class="article article-11">
+            <h2>Article-11</h2>
+        </article>
+        <article class="article article-12">
+            <h2>Article-12</h2>
+        </article>
+        <article class="article article-13">
+            <h2>Article-13</h2>
+        </article>
+        <article class="article article-14">
+            <h2>Article-14</h2>
+        </article>
+        <article class="article article-15">
+            <h2>Article-15</h2>
+        </article>
+    </div>
+</body>
+</html>

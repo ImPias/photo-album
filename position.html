@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: cadetblue;
+            margin: 5px;
+            border: 1px solid black;
+        }
+        .box-2{
+            position: relative;
+            left: 150px;
+        }
+        .container2{
+            display: flex;
+            position: relative;
+        }
+        .A-box{
+            height: 100px;
+            width: 100px;
+            background-color: cadetblue;
+            margin: 5px;
+            border: 1px solid black;
+        }
+        .box-7{
+            position: absolute;
+            left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <h2>Relative</h2>
+    <div class="container">
+        <div class="box box-1">
+            <h3>Box-1</h3>
+        </div>
+        <div class="box box-2">
+            <h3>Box-2</h3>
+        </div>
+        <div class="box box-3">
+            <h3>Box-3</h3>
+        </div>
+        <div class="box box-4">
+            <h3>Box-4</h3>
+        </div>
+    </div>
+    <h2>Absolute</h2>
+    <div class="container2">
+        <div class="A-box box-5">
+            <h3>Box-5</h3>
+        </div>
+        <div class="A-box box-6">
+            <h3>Box-6</h3>
+        </div>
+        <div class="A-box box-7">
+            <h3>Box-7</h3>
+        </div>
+        <div class="A-box box-8">
+            <h3>Box-8</h3>
+        </div>
+    </div>
+</body>
+</html>
